@@ -64,7 +64,7 @@ func _get_import_order() -> int:
 	return ResourceImporter.IMPORT_ORDER_DEFAULT
 
 
-func _get_option_visibility(path: String, option_name : String, options : Dictionary) -> bool:
+func _get_option_visibility(path: String, option_name : StringName, options : Dictionary) -> bool:
 	return true
 
 

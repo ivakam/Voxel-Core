@@ -13,14 +13,14 @@ func _get_importer_name() -> String:
 	return "VoxelCore.MeshOfVoxels"
 
 
-func _get_recognized_extensions() -> Array:
-	return [
+func _get_recognized_extensions() -> PackedStringArray:
+	return PackedStringArray([
 		"png", "jpg",
 		"vox",
 		#"qb",
 		#"qbt",
 		#"vxm",
-	]
+	])
 	
 
 func _get_resource_type() -> String:

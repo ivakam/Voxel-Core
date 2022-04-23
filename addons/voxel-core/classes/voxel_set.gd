@@ -51,12 +51,12 @@ var _uv_scale := Vector2.ONE
 
 
 ## Built-In Virtual Methods
-func _get(property : String):
+func _get(property : StringName):
 	if property == "VOXELS":
 		return _voxels
 
 
-func _set(property : String, value) -> bool:
+func _set(property : StringName, value) -> bool:
 	if property == "VOXELS":
 		if typeof(value) == TYPE_DICTIONARY:
 			for key in value:

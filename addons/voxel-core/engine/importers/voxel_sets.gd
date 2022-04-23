@@ -15,15 +15,14 @@ func _get_visible_name() -> String:
 func _get_importer_name() -> String:
 	return "VoxelCore.VoxelSet"
 
-
-func _get_recognized_extensions() -> Array:
-	return [
+func _get_recognized_extensions() -> PackedStringArray:
+	return PackedStringArray([
 		"png", "jpg",
 		"vox",
 		"gpl",
-	]
-	
-	
+	])
+
+
 func _get_priority() -> float:
 	return 0.8
 
@@ -56,7 +55,7 @@ func _get_import_options(path: String, preset : int) -> Array:
 	return preset_options
 
 
-func _get_option_visibility(path: String, option : String, options : Dictionary) -> bool:
+func _get_option_visibility(path: String, option : StringName, options : Dictionary) -> bool:
 	return true
 
 
