@@ -13,8 +13,11 @@ func _get_importer_name() -> String:
 	return "VoxelCore.MagicaVoxelScene"
 
 
-func _get_recognized_extensions() -> Array:
-	return ["vox"]
+func _get_recognized_extensions() -> PackedStringArray:
+	return PackedStringArray([
+		"vox",
+	])
+
 
 
 func _get_resource_type() -> String:
