@@ -55,7 +55,7 @@ func _get_import_options(path: String, preset : int) -> Array:
 	return preset_options
 
 
-func _get_option_visibility(path: String, option : String, options : Dictionary) -> bool:
+func _get_option_visibility(path: String, option : StringName, options : Dictionary) -> bool:
 	return true
 
 
