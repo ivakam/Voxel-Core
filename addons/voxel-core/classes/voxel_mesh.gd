@@ -12,12 +12,12 @@ var _voxels := {}
 
 
 ## Built-In Virtual Methods
-func _get(property : String):
+func _get(property : StringName):
 	if property == "VOXELS":
 		return _voxels
 
 
-func _set(property : String, value):
+func _set(property : StringName, value):
 	if property == "VOXELS":
 		_voxels = value
 		return true
